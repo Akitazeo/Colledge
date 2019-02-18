@@ -17,7 +17,10 @@ namespace Colledge
         {
             
             InitializeComponent();
-            
+            panel2.BackColor = Color.FromArgb(120, 253, 253, 196);
+           
+
+
         }
 
         public static int ActiveUser=0;
@@ -68,6 +71,21 @@ namespace Colledge
         private void Autorization_Load(object sender, EventArgs e)
         {
             tbPassword.Focus();
+        }
+
+        private void tbPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbLogin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
