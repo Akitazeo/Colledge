@@ -113,6 +113,7 @@ namespace Colledge
             if (vpred % 2 != 0)
                 predmetDataGridView.Visible = false;
             else predmetDataGridView.Visible = true;
+            vpred++;
         }
 
         private void ученикToolStripMenuItem_Click(object sender, EventArgs e)
@@ -120,16 +121,23 @@ namespace Colledge
             if (vuchenik % 2 != 0)
                 uchenikDataGridView.Visible = false;
             uchenikDataGridView.Visible = true;
+            vuchenik++;
         }
 
         private void учительToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            uchitelDataGridView.Visible = true;
+            if (vuchitel % 2 != 0)
+                uchitelDataGridView.Visible = false;
+           else uchitelDataGridView.Visible = true;
+            vuchitel++;
         }
 
         private void спецФакToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            specFacDataGridView.Visible = true;
+            if(vspecfac%2!=0)
+                specFacDataGridView.Visible = false;
+            else specFacDataGridView.Visible = true;
+            vspecfac++;
         }
 
         private void addToolStripMenuItem4_Click_1(object sender, EventArgs e)
