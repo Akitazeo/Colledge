@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Colledge
 {
-    public partial class tsmAddFaqultet : Form
+    public partial class tsmAddGrUch : Form
     {
-        public tsmAddFaqultet()
+        public tsmAddGrUch()
         {
             InitializeComponent();
         }

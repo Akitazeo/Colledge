@@ -75,11 +75,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="tsmAddFaqultet.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="tsmAddFaqultet.Designer.cs">
-      <DependentUpon>tsmAddFaqultet.cs</DependentUpon>
+    <Compile Include="Student.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Student.xsd</DependentUpon>
     </Compile>
     <Compile Include="tsmAddPredmet.cs">
       <SubType>Form</SubType>
@@ -93,11 +92,11 @@
     <Compile Include="tsmAddSpecFaq.Designer.cs">
       <DependentUpon>tsmAddSpecFaq.cs</DependentUpon>
     </Compile>
-    <Compile Include="tsmAddSpecialnost.cs">
+    <Compile Include="tsmAddGrUch.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="tsmAddSpecialnost.Designer.cs">
-      <DependentUpon>tsmAddSpecialnost.cs</DependentUpon>
+    <Compile Include="tsmAddGrUch.Designer.cs">
+      <DependentUpon>tsmAddGrUch.cs</DependentUpon>
     </Compile>
     <Compile Include="tsmAddUchitel.cs">
       <SubType>Form</SubType>
@@ -133,17 +132,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="tsmAddFaqultet.resx">
-      <DependentUpon>tsmAddFaqultet.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="tsmAddPredmet.resx">
       <DependentUpon>tsmAddPredmet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="tsmAddSpecFaq.resx">
       <DependentUpon>tsmAddSpecFaq.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="tsmAddSpecialnost.resx">
-      <DependentUpon>tsmAddSpecialnost.cs</DependentUpon>
+    <EmbeddedResource Include="tsmAddGrUch.resx">
+      <DependentUpon>tsmAddGrUch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="tsmAddUchitel.resx">
       <DependentUpon>tsmAddUchitel.cs</DependentUpon>
@@ -163,6 +159,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Student.xsc">
+      <DependentUpon>Student.xsd</DependentUpon>
+    </None>
+    <None Include="Student.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Student.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Student.xss">
+      <DependentUpon>Student.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

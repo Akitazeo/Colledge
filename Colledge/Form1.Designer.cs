@@ -31,13 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Autorization));
             this.btnAutorization = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.lPassword = new System.Windows.Forms.Label();
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.tbLogin = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -49,7 +49,7 @@
             this.btnAutorization.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(242)))), ((int)(((byte)(128)))));
             this.btnAutorization.FlatAppearance.BorderSize = 0;
             this.btnAutorization.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAutorization.Font = new System.Drawing.Font("Century Gothic", 13.8F);
+            this.btnAutorization.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnAutorization.Location = new System.Drawing.Point(165, 145);
             this.btnAutorization.Name = "btnAutorization";
             this.btnAutorization.Size = new System.Drawing.Size(96, 33);
@@ -63,7 +63,7 @@
             this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(217)))), ((int)(((byte)(49)))));
             this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 13.8F);
+            this.btnCancel.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnCancel.Location = new System.Drawing.Point(62, 145);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(97, 33);
@@ -72,17 +72,6 @@
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(73, 58);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 22);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Login";
-            // 
             // lPassword
             // 
             this.lPassword.AutoSize = true;
@@ -90,7 +79,7 @@
             this.lPassword.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.lPassword.Location = new System.Drawing.Point(46, 100);
             this.lPassword.Name = "lPassword";
-            this.lPassword.Size = new System.Drawing.Size(95, 22);
+            this.lPassword.Size = new System.Drawing.Size(0, 16);
             this.lPassword.TabIndex = 3;
             this.lPassword.Text = "Password";
             // 
@@ -152,17 +141,25 @@
             this.panel2.Size = new System.Drawing.Size(315, 201);
             this.panel2.TabIndex = 6;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(97, 63);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 23);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Login";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.Color.Olive;
-            this.label2.Location = new System.Drawing.Point(149, 16);
+            this.label2.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(71, 99);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 27);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Please, Log In";
+            this.label2.Size = new System.Drawing.Size(71, 23);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Password";
             // 
             // Autorization
             // 
@@ -194,14 +191,14 @@
 
         private System.Windows.Forms.Button btnAutorization;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lPassword;
         private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.TextBox tbLogin;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

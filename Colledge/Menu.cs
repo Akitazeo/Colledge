@@ -12,7 +12,13 @@ namespace Colledge
 {
     public partial class Menu : Form
     {
-        
+        private int vuchenik = 0;
+        private int vjurnal = 0;
+        private int vuchitel = 0;
+        private int vgroup = 0;
+        private int vpred = 0;
+        private int vspecfac = 0;
+
         public Menu()
         {
             InitializeComponent();
@@ -43,15 +49,11 @@ namespace Colledge
 
         private void addToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            tsmAddSpecialnost tsmAddSpec = new tsmAddSpecialnost();
+            tsmAddGrUch tsmAddSpec = new tsmAddGrUch();
             tsmAddSpec.Show();
         }
 
-        private void addToolStripMenuItem4_Click(object sender, EventArgs e)
-        {
-            tsmAddFaqultet tsmAddFaq = new tsmAddFaqultet();
-            tsmAddFaq.Show();
-        }
+
 
         private void addToolStripMenuItem5_Click(object sender, EventArgs e)
         {
@@ -68,6 +70,72 @@ namespace Colledge
         private void toolStripDropDownButton2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void grUcenicBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.grUcenicBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.student);
+
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+            this.uchitelTableAdapter.Fill(this.student.Uchitel);
+            this.uchenikTableAdapter.Fill(this.student.Uchenik);
+            this.specFacTableAdapter.Fill(this.student.SpecFac);
+            this.grUcenicTableAdapter.Fill(this.student.GrUcenic);
+            this.uchitelTableAdapter.Fill(this.student.Uchitel);
+            this.jurnalTableAdapter.Fill(this.student.Jurnal);
+
+        }
+
+        private void факультетToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if (vgroup % 2 != 0)
+                grUcenicDataGridView.Visible = false;
+            else grUcenicDataGridView.Visible = true;
+            vgroup++;
+        }
+
+        private void журналToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (vjurnal % 2 != 0)
+                jurnalDataGridView.Visible = false;
+            else predmetDataGridView.Visible = true;
+            vjurnal++;
+        }
+
+        private void tsmПредмет_Click(object sender, EventArgs e)
+        {
+            if (vpred % 2 != 0)
+                predmetDataGridView.Visible = false;
+            else predmetDataGridView.Visible = true;
+        }
+
+        private void ученикToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (vuchenik % 2 != 0)
+                uchenikDataGridView.Visible = false;
+            uchenikDataGridView.Visible = true;
+        }
+
+        private void учительToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            uchitelDataGridView.Visible = true;
+        }
+
+        private void спецФакToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            specFacDataGridView.Visible = true;
+        }
+
+        private void addToolStripMenuItem4_Click_1(object sender, EventArgs e)
+        {
+            tsmAddSpecFaq tsmsf = new tsmAddSpecFaq();
+            tsmsf.ShowDialog();
         }
     }
 }
