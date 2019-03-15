@@ -67,10 +67,7 @@ namespace Colledge
             tsmSpecFaq.Show();
         }
 
-        private void toolStripDropDownButton2_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void grUcenicBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
@@ -104,7 +101,7 @@ namespace Colledge
         {
             if (vjurnal % 2 != 0)
                 jurnalDataGridView.Visible = false;
-            else predmetDataGridView.Visible = true;
+            else jurnalDataGridView.Visible = true;
             vjurnal++;
         }
 
@@ -120,7 +117,7 @@ namespace Colledge
         {
             if (vuchenik % 2 != 0)
                 uchenikDataGridView.Visible = false;
-            uchenikDataGridView.Visible = true;
+           else uchenikDataGridView.Visible = true;
             vuchenik++;
         }
 
@@ -144,6 +141,42 @@ namespace Colledge
         {
             tsmAddSpecFaq tsmsf = new tsmAddSpecFaq();
             tsmsf.ShowDialog();
+        }
+
+        private void deleteToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            GrUchDelete GUD = new GrUchDelete();
+            GUD.ShowDialog();
+        }
+
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UchenikEdit UE = new UchenikEdit();
+            UE.ShowDialog();
+        }
+
+        private void deleteToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            UchitelDelete UD = new UchitelDelete();
+            UD.ShowDialog();
+        }
+
+        private void editToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            UchitelEdit UCED = new UchitelEdit();
+            UCED.ShowDialog();
+        }
+
+        private void deleteToolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            PredmetDelete PredDel = new PredmetDelete();
+            PredDel.ShowDialog();
+        }
+
+        private void deleteToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            SpetFacDelete SFD = new SpetFacDelete();
+            SFD.ShowDialog();
         }
     }
 }
