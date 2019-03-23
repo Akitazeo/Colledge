@@ -34,8 +34,6 @@
             this.tsmUchenikAddIDNP = new System.Windows.Forms.Label();
             this.tsmUchenikAddNStudUc = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tsmUchenikAddSave = new System.Windows.Forms.Button();
-            this.tsmUchenikAddCancel = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
@@ -44,6 +42,8 @@
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tsmUchenikAddDate = new System.Windows.Forms.DateTimePicker();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnAutorization = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tsmJurnalAdd
@@ -101,28 +101,6 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Введите дату: ";
             // 
-            // tsmUchenikAddSave
-            // 
-            this.tsmUchenikAddSave.BackColor = System.Drawing.Color.Transparent;
-            this.tsmUchenikAddSave.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tsmUchenikAddSave.Location = new System.Drawing.Point(119, 393);
-            this.tsmUchenikAddSave.Name = "tsmUchenikAddSave";
-            this.tsmUchenikAddSave.Size = new System.Drawing.Size(75, 27);
-            this.tsmUchenikAddSave.TabIndex = 6;
-            this.tsmUchenikAddSave.Text = "SAVE";
-            this.tsmUchenikAddSave.UseVisualStyleBackColor = false;
-            // 
-            // tsmUchenikAddCancel
-            // 
-            this.tsmUchenikAddCancel.BackColor = System.Drawing.Color.Transparent;
-            this.tsmUchenikAddCancel.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tsmUchenikAddCancel.Location = new System.Drawing.Point(346, 393);
-            this.tsmUchenikAddCancel.Name = "tsmUchenikAddCancel";
-            this.tsmUchenikAddCancel.Size = new System.Drawing.Size(75, 27);
-            this.tsmUchenikAddCancel.TabIndex = 7;
-            this.tsmUchenikAddCancel.Text = "Cancel";
-            this.tsmUchenikAddCancel.UseVisualStyleBackColor = false;
-            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
@@ -152,7 +130,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(314, 213);
+            this.label2.Location = new System.Drawing.Point(203, 209);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(121, 54);
             this.label2.TabIndex = 12;
@@ -180,7 +158,7 @@
             // comboBox5
             // 
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(441, 236);
+            this.comboBox5.Location = new System.Drawing.Point(330, 232);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(37, 21);
             this.comboBox5.TabIndex = 14;
@@ -190,7 +168,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(184, 219);
+            this.label3.Location = new System.Drawing.Point(125, 213);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 40);
             this.label3.TabIndex = 15;
@@ -205,13 +183,41 @@
             this.tsmUchenikAddDate.TabIndex = 16;
             this.tsmUchenikAddDate.Value = new System.DateTime(2019, 2, 12, 17, 33, 31, 0);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(116)))), ((int)(((byte)(34)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(69, 367);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(69, 28);
+            this.button1.TabIndex = 42;
+            this.button1.Text = "Cancel";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // btnAutorization
+            // 
+            this.btnAutorization.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(116)))), ((int)(((byte)(34)))));
+            this.btnAutorization.FlatAppearance.BorderSize = 0;
+            this.btnAutorization.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAutorization.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnAutorization.Location = new System.Drawing.Point(255, 367);
+            this.btnAutorization.Name = "btnAutorization";
+            this.btnAutorization.Size = new System.Drawing.Size(69, 28);
+            this.btnAutorization.TabIndex = 41;
+            this.btnAutorization.Text = "Save";
+            this.btnAutorization.UseVisualStyleBackColor = false;
+            // 
             // tsmUchenikAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Colledge.Properties.Resources.HI3AS9;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(514, 475);
+            this.ClientSize = new System.Drawing.Size(382, 429);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAutorization);
             this.Controls.Add(this.tsmUchenikAddDate);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox5);
@@ -220,8 +226,6 @@
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.tsmUchenikAddCancel);
-            this.Controls.Add(this.tsmUchenikAddSave);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tsmUchenikAddNStudUc);
             this.Controls.Add(this.tsmUchenikAddIDNP);
@@ -243,8 +247,6 @@
         private System.Windows.Forms.Label tsmUchenikAddIDNP;
         private System.Windows.Forms.Label tsmUchenikAddNStudUc;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button tsmUchenikAddSave;
-        private System.Windows.Forms.Button tsmUchenikAddCancel;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
@@ -253,5 +255,7 @@
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker tsmUchenikAddDate;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAutorization;
     }
 }

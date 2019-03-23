@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Colledge
 {
-    public partial class tsmUchenikAdd : Form
+    public partial class GrUchDelete : Form
     {
-        public tsmUchenikAdd()
+        public GrUchDelete()
         {
             InitializeComponent();
         }
 
-        private void tsmUchenikAddCancel_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }

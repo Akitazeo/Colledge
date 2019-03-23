@@ -10,14 +10,20 @@ using System.Windows.Forms;
 
 namespace Colledge
 {
-    public partial class tsmUchenikAdd : Form
+    public partial class UchitelEdit : Form
     {
-        public tsmUchenikAdd()
+        public UchitelEdit()
         {
             InitializeComponent();
+            panel1.BackColor = Color.FromArgb(120, 218, 97, 4);
         }
 
-        private void tsmUchenikAddCancel_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }

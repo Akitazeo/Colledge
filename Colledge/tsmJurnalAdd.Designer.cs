@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tsmJurnalAdd));
-            this.tsmUchenikAddCancel = new System.Windows.Forms.Button();
-            this.tsmUchenikAddSave = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -41,29 +39,9 @@
             this.tsmUchenikAddAdress = new System.Windows.Forms.Label();
             this.tsmUchenikAddFIO = new System.Windows.Forms.TextBox();
             this.tsmUchenikAddLabel = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnAutorization = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // tsmUchenikAddCancel
-            // 
-            this.tsmUchenikAddCancel.BackColor = System.Drawing.Color.Transparent;
-            this.tsmUchenikAddCancel.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tsmUchenikAddCancel.Location = new System.Drawing.Point(196, 315);
-            this.tsmUchenikAddCancel.Name = "tsmUchenikAddCancel";
-            this.tsmUchenikAddCancel.Size = new System.Drawing.Size(75, 27);
-            this.tsmUchenikAddCancel.TabIndex = 19;
-            this.tsmUchenikAddCancel.Text = "CANCEL";
-            this.tsmUchenikAddCancel.UseVisualStyleBackColor = false;
-            // 
-            // tsmUchenikAddSave
-            // 
-            this.tsmUchenikAddSave.BackColor = System.Drawing.Color.Transparent;
-            this.tsmUchenikAddSave.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tsmUchenikAddSave.Location = new System.Drawing.Point(75, 315);
-            this.tsmUchenikAddSave.Name = "tsmUchenikAddSave";
-            this.tsmUchenikAddSave.Size = new System.Drawing.Size(75, 27);
-            this.tsmUchenikAddSave.TabIndex = 17;
-            this.tsmUchenikAddSave.Text = "SAVE";
-            this.tsmUchenikAddSave.UseVisualStyleBackColor = false;
             // 
             // textBox4
             // 
@@ -163,6 +141,32 @@
             this.tsmUchenikAddLabel.TabIndex = 9;
             this.tsmUchenikAddLabel.Text = "Введите ФИО: ";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(116)))), ((int)(((byte)(34)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(63, 316);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(69, 28);
+            this.button1.TabIndex = 42;
+            this.button1.Text = "Cancel";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // btnAutorization
+            // 
+            this.btnAutorization.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(116)))), ((int)(((byte)(34)))));
+            this.btnAutorization.FlatAppearance.BorderSize = 0;
+            this.btnAutorization.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAutorization.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnAutorization.Location = new System.Drawing.Point(253, 316);
+            this.btnAutorization.Name = "btnAutorization";
+            this.btnAutorization.Size = new System.Drawing.Size(69, 28);
+            this.btnAutorization.TabIndex = 41;
+            this.btnAutorization.Text = "Save";
+            this.btnAutorization.UseVisualStyleBackColor = false;
+            // 
             // tsmJurnalAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -170,8 +174,8 @@
             this.BackgroundImage = global::Colledge.Properties.Resources.HI3AS9;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(355, 369);
-            this.Controls.Add(this.tsmUchenikAddCancel);
-            this.Controls.Add(this.tsmUchenikAddSave);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAutorization);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox3);
@@ -194,9 +198,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button tsmUchenikAddCancel;
-        private System.Windows.Forms.Button tsmUchenikAddSave;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox3;
@@ -207,5 +208,7 @@
         private System.Windows.Forms.Label tsmUchenikAddAdress;
         private System.Windows.Forms.TextBox tsmUchenikAddFIO;
         private System.Windows.Forms.Label tsmUchenikAddLabel;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAutorization;
     }
 }

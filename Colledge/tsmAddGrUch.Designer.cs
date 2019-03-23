@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tsmAddGrUch));
             this.tsmUchenikAddCancel = new System.Windows.Forms.Button();
             this.tsmUchenikAddSave = new System.Windows.Forms.Button();
             this.tsmUchenikAddIDNP = new System.Windows.Forms.Label();
@@ -109,6 +110,7 @@
             this.Controls.Add(this.tsmUchenikAddSave);
             this.Controls.Add(this.tsmUchenikAddIDNP);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "tsmAddGrUch";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Добавление группы";
