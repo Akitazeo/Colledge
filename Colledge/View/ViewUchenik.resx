@@ -117,35 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="mainBtnUch" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mainBtnUch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LogInBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LogInBG.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mainBtnUchBrightness" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mainBtnUchBrightness.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AnotherDiagramBD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AnotherDiagramBD.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MainBtnUchitelBrightness" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MainBtnUchitelBrightness.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="OpenBookBG2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OpenBookBG2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="OpenBookBG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OpenBookBG1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ExperimentalBGCosmos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ExperimentalBGCosmos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DiagramBD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DiagramBD.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MainBtnUchitel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MainBtnUchitel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

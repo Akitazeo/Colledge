@@ -63,9 +63,9 @@ namespace Colledge.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _593cfce30989815c963bd6df {
+        internal static System.Drawing.Bitmap AnotherDiagramBD {
             get {
-                object obj = ResourceManager.GetObject("593cfce30989815c963bd6df", resourceCulture);
+                object obj = ResourceManager.GetObject("AnotherDiagramBD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Colledge.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap HI3AS9 {
+        internal static System.Drawing.Bitmap DiagramBD {
             get {
-                object obj = ResourceManager.GetObject("HI3AS9", resourceCulture);
+                object obj = ResourceManager.GetObject("DiagramBD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,79 @@ namespace Colledge.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap mnbjhjhj {
+        internal static System.Drawing.Bitmap ExperimentalBGCosmos {
             get {
-                object obj = ResourceManager.GetObject("mnbjhjhj", resourceCulture);
+                object obj = ResourceManager.GetObject("ExperimentalBGCosmos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LogInBG {
+            get {
+                object obj = ResourceManager.GetObject("LogInBG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mainBtnUch {
+            get {
+                object obj = ResourceManager.GetObject("mainBtnUch", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mainBtnUchBrightness {
+            get {
+                object obj = ResourceManager.GetObject("mainBtnUchBrightness", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MainBtnUchitel {
+            get {
+                object obj = ResourceManager.GetObject("MainBtnUchitel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MainBtnUchitelBrightness {
+            get {
+                object obj = ResourceManager.GetObject("MainBtnUchitelBrightness", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OpenBookBG1 {
+            get {
+                object obj = ResourceManager.GetObject("OpenBookBG1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OpenBookBG2 {
+            get {
+                object obj = ResourceManager.GetObject("OpenBookBG2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

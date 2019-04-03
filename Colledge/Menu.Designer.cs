@@ -30,39 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.tsmEdit = new System.Windows.Forms.ToolStripDropDownButton();
-            this.tsmUchenik = new System.Windows.Forms.ToolStripMenuItem();
-            this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmJurnal = new System.Windows.Forms.ToolStripMenuItem();
-            this.addToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmUchitel = new System.Windows.Forms.ToolStripMenuItem();
-            this.addToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmSpetialnost = new System.Windows.Forms.ToolStripMenuItem();
-            this.addToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmPredmet = new System.Windows.Forms.ToolStripMenuItem();
-            this.addToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.спецФакToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.addToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.ученикToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.журналToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.учительToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ГруппаУчениковToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmПредмет = new System.Windows.Forms.ToolStripMenuItem();
-            this.спецФакToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmTool = new System.Windows.Forms.ToolStripDropDownButton();
-            this.backupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmRestore = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripDropDownButton3 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.student = new Colledge.Student();
             this.grUcenicBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.grUcenicTableAdapter = new Colledge.StudentTableAdapters.GrUcenicTableAdapter();
@@ -77,9 +44,23 @@
             this.specFacBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.uchenikBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.uchitelBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.средняяОценкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.информацияПоУченикуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStrip1.SuspendLayout();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.mainBtnBackUp = new System.Windows.Forms.Button();
+            this.mainBtnSwitch = new System.Windows.Forms.Button();
+            this.mainBtnExit = new System.Windows.Forms.Button();
+            this.mainBtnRestore = new System.Windows.Forms.Button();
+            this.mainBtnDelete = new System.Windows.Forms.Button();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.mainBtnView = new System.Windows.Forms.Button();
+            this.mainAdd = new System.Windows.Forms.Button();
+            this.mainBtnEdit = new System.Windows.Forms.Button();
+            this.mainBtnUchenik = new System.Windows.Forms.Button();
+            this.mainBtnGroup = new System.Windows.Forms.Button();
+            this.mainBtnUchitel = new System.Windows.Forms.Button();
+            this.mainBtnJournal = new System.Windows.Forms.Button();
+            this.mainBtnPredmet = new System.Windows.Forms.Button();
+            this.mainBtnSpecFac = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.student)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grUcenicBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jurnalBindingSource)).BeginInit();
@@ -87,280 +68,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.specFacBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uchenikBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uchitelBindingSource)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.BackColor = System.Drawing.Color.DarkSalmon;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmEdit,
-            this.toolStripDropDownButton1,
-            this.tsmTool,
-            this.toolStripDropDownButton3});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1264, 25);
-            this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // tsmEdit
-            // 
-            this.tsmEdit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.tsmEdit.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmUchenik,
-            this.tsmJurnal,
-            this.tsmUchitel,
-            this.tsmSpetialnost,
-            this.tsmPredmet,
-            this.спецФакToolStripMenuItem1});
-            this.tsmEdit.Image = ((System.Drawing.Image)(resources.GetObject("tsmEdit.Image")));
-            this.tsmEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsmEdit.Name = "tsmEdit";
-            this.tsmEdit.Size = new System.Drawing.Size(40, 22);
-            this.tsmEdit.Text = "Edit";
-            // 
-            // tsmUchenik
-            // 
-            this.tsmUchenik.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addToolStripMenuItem,
-            this.editToolStripMenuItem});
-            this.tsmUchenik.Name = "tsmUchenik";
-            this.tsmUchenik.Size = new System.Drawing.Size(168, 22);
-            this.tsmUchenik.Text = "Ученик";
-            // 
-            // addToolStripMenuItem
-            // 
-            this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
-            this.addToolStripMenuItem.Text = "Add";
-            this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
-            // 
-            // editToolStripMenuItem
-            // 
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
-            this.editToolStripMenuItem.Text = "Edit";
-            this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
-            // 
-            // tsmJurnal
-            // 
-            this.tsmJurnal.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addToolStripMenuItem1});
-            this.tsmJurnal.Name = "tsmJurnal";
-            this.tsmJurnal.Size = new System.Drawing.Size(168, 22);
-            this.tsmJurnal.Text = "Журнал";
-            // 
-            // addToolStripMenuItem1
-            // 
-            this.addToolStripMenuItem1.Name = "addToolStripMenuItem1";
-            this.addToolStripMenuItem1.Size = new System.Drawing.Size(96, 22);
-            this.addToolStripMenuItem1.Text = "Add";
-            this.addToolStripMenuItem1.Click += new System.EventHandler(this.addToolStripMenuItem1_Click);
-            // 
-            // tsmUchitel
-            // 
-            this.tsmUchitel.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addToolStripMenuItem2,
-            this.editToolStripMenuItem2,
-            this.deleteToolStripMenuItem2});
-            this.tsmUchitel.Name = "tsmUchitel";
-            this.tsmUchitel.Size = new System.Drawing.Size(168, 22);
-            this.tsmUchitel.Text = "Учитель";
-            // 
-            // addToolStripMenuItem2
-            // 
-            this.addToolStripMenuItem2.Name = "addToolStripMenuItem2";
-            this.addToolStripMenuItem2.Size = new System.Drawing.Size(107, 22);
-            this.addToolStripMenuItem2.Text = "Add";
-            this.addToolStripMenuItem2.Click += new System.EventHandler(this.addToolStripMenuItem2_Click);
-            // 
-            // editToolStripMenuItem2
-            // 
-            this.editToolStripMenuItem2.Name = "editToolStripMenuItem2";
-            this.editToolStripMenuItem2.Size = new System.Drawing.Size(107, 22);
-            this.editToolStripMenuItem2.Text = "Edit";
-            this.editToolStripMenuItem2.Click += new System.EventHandler(this.editToolStripMenuItem2_Click);
-            // 
-            // deleteToolStripMenuItem2
-            // 
-            this.deleteToolStripMenuItem2.Name = "deleteToolStripMenuItem2";
-            this.deleteToolStripMenuItem2.Size = new System.Drawing.Size(107, 22);
-            this.deleteToolStripMenuItem2.Text = "Delete";
-            this.deleteToolStripMenuItem2.Click += new System.EventHandler(this.deleteToolStripMenuItem2_Click);
-            // 
-            // tsmSpetialnost
-            // 
-            this.tsmSpetialnost.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addToolStripMenuItem3,
-            this.deleteToolStripMenuItem3});
-            this.tsmSpetialnost.Name = "tsmSpetialnost";
-            this.tsmSpetialnost.Size = new System.Drawing.Size(168, 22);
-            this.tsmSpetialnost.Text = "Группа учеников";
-            // 
-            // addToolStripMenuItem3
-            // 
-            this.addToolStripMenuItem3.Name = "addToolStripMenuItem3";
-            this.addToolStripMenuItem3.Size = new System.Drawing.Size(107, 22);
-            this.addToolStripMenuItem3.Text = "Add";
-            this.addToolStripMenuItem3.Click += new System.EventHandler(this.addToolStripMenuItem3_Click);
-            // 
-            // deleteToolStripMenuItem3
-            // 
-            this.deleteToolStripMenuItem3.Name = "deleteToolStripMenuItem3";
-            this.deleteToolStripMenuItem3.Size = new System.Drawing.Size(107, 22);
-            this.deleteToolStripMenuItem3.Text = "Delete";
-            this.deleteToolStripMenuItem3.Click += new System.EventHandler(this.deleteToolStripMenuItem3_Click);
-            // 
-            // tsmPredmet
-            // 
-            this.tsmPredmet.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addToolStripMenuItem5,
-            this.deleteToolStripMenuItem5});
-            this.tsmPredmet.Name = "tsmPredmet";
-            this.tsmPredmet.Size = new System.Drawing.Size(168, 22);
-            this.tsmPredmet.Text = "Предмет";
-            // 
-            // addToolStripMenuItem5
-            // 
-            this.addToolStripMenuItem5.Name = "addToolStripMenuItem5";
-            this.addToolStripMenuItem5.Size = new System.Drawing.Size(107, 22);
-            this.addToolStripMenuItem5.Text = "Add";
-            this.addToolStripMenuItem5.Click += new System.EventHandler(this.addToolStripMenuItem5_Click);
-            // 
-            // deleteToolStripMenuItem5
-            // 
-            this.deleteToolStripMenuItem5.Name = "deleteToolStripMenuItem5";
-            this.deleteToolStripMenuItem5.Size = new System.Drawing.Size(107, 22);
-            this.deleteToolStripMenuItem5.Text = "Delete";
-            this.deleteToolStripMenuItem5.Click += new System.EventHandler(this.deleteToolStripMenuItem5_Click);
-            // 
-            // спецФакToolStripMenuItem1
-            // 
-            this.спецФакToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addToolStripMenuItem4,
-            this.deleteToolStripMenuItem4});
-            this.спецФакToolStripMenuItem1.Name = "спецФакToolStripMenuItem1";
-            this.спецФакToolStripMenuItem1.Size = new System.Drawing.Size(168, 22);
-            this.спецФакToolStripMenuItem1.Text = "Спец.Фак.";
-            // 
-            // addToolStripMenuItem4
-            // 
-            this.addToolStripMenuItem4.Name = "addToolStripMenuItem4";
-            this.addToolStripMenuItem4.Size = new System.Drawing.Size(107, 22);
-            this.addToolStripMenuItem4.Text = "Add";
-            this.addToolStripMenuItem4.Click += new System.EventHandler(this.addToolStripMenuItem4_Click_1);
-            // 
-            // deleteToolStripMenuItem4
-            // 
-            this.deleteToolStripMenuItem4.Name = "deleteToolStripMenuItem4";
-            this.deleteToolStripMenuItem4.Size = new System.Drawing.Size(107, 22);
-            this.deleteToolStripMenuItem4.Text = "Delete";
-            this.deleteToolStripMenuItem4.Click += new System.EventHandler(this.deleteToolStripMenuItem4_Click);
-            // 
-            // toolStripDropDownButton1
-            // 
-            this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ученикToolStripMenuItem,
-            this.журналToolStripMenuItem,
-            this.учительToolStripMenuItem,
-            this.ГруппаУчениковToolStripMenuItem,
-            this.tsmПредмет,
-            this.спецФакToolStripMenuItem});
-            this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
-            this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(45, 22);
-            this.toolStripDropDownButton1.Text = "View";
-            // 
-            // ученикToolStripMenuItem
-            // 
-            this.ученикToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.средняяОценкаToolStripMenuItem,
-            this.информацияПоУченикуToolStripMenuItem});
-            this.ученикToolStripMenuItem.Name = "ученикToolStripMenuItem";
-            this.ученикToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.ученикToolStripMenuItem.Text = "Ученик";
-            this.ученикToolStripMenuItem.Click += new System.EventHandler(this.ученикToolStripMenuItem_Click);
-            // 
-            // журналToolStripMenuItem
-            // 
-            this.журналToolStripMenuItem.Name = "журналToolStripMenuItem";
-            this.журналToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.журналToolStripMenuItem.Text = "Журнал";
-            // 
-            // учительToolStripMenuItem
-            // 
-            this.учительToolStripMenuItem.Name = "учительToolStripMenuItem";
-            this.учительToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.учительToolStripMenuItem.Text = "Учитель";
-            // 
-            // ГруппаУчениковToolStripMenuItem
-            // 
-            this.ГруппаУчениковToolStripMenuItem.Name = "ГруппаУчениковToolStripMenuItem";
-            this.ГруппаУчениковToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.ГруппаУчениковToolStripMenuItem.Text = "Группа учеников";
-            // 
-            // tsmПредмет
-            // 
-            this.tsmПредмет.Name = "tsmПредмет";
-            this.tsmПредмет.Size = new System.Drawing.Size(180, 22);
-            this.tsmПредмет.Text = "Предмет";
-            // 
-            // спецФакToolStripMenuItem
-            // 
-            this.спецФакToolStripMenuItem.Name = "спецФакToolStripMenuItem";
-            this.спецФакToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.спецФакToolStripMenuItem.Text = "Спец.Фак.";
-            // 
-            // tsmTool
-            // 
-            this.tsmTool.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.tsmTool.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.backupToolStripMenuItem,
-            this.tsmRestore});
-            this.tsmTool.Image = ((System.Drawing.Image)(resources.GetObject("tsmTool.Image")));
-            this.tsmTool.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsmTool.Name = "tsmTool";
-            this.tsmTool.Size = new System.Drawing.Size(48, 22);
-            this.tsmTool.Text = "Tools";
-            // 
-            // backupToolStripMenuItem
-            // 
-            this.backupToolStripMenuItem.Name = "backupToolStripMenuItem";
-            this.backupToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
-            this.backupToolStripMenuItem.Text = "Backup";
-            // 
-            // tsmRestore
-            // 
-            this.tsmRestore.Name = "tsmRestore";
-            this.tsmRestore.Size = new System.Drawing.Size(113, 22);
-            this.tsmRestore.Text = "Restore";
-            // 
-            // toolStripDropDownButton3
-            // 
-            this.toolStripDropDownButton3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripDropDownButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripDropDownButton3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutUsToolStripMenuItem,
-            this.reportToolStripMenuItem});
-            this.toolStripDropDownButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton3.Image")));
-            this.toolStripDropDownButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton3.Name = "toolStripDropDownButton3";
-            this.toolStripDropDownButton3.Size = new System.Drawing.Size(45, 22);
-            this.toolStripDropDownButton3.Text = "Help";
-            // 
-            // aboutUsToolStripMenuItem
-            // 
-            this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
-            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.aboutUsToolStripMenuItem.Text = "About us";
-            // 
-            // reportToolStripMenuItem
-            // 
-            this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
-            this.reportToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.reportToolStripMenuItem.Text = "Report";
             // 
             // student
             // 
@@ -432,35 +142,355 @@
             this.uchitelBindingSource.DataMember = "Uchitel";
             this.uchitelBindingSource.DataSource = this.student;
             // 
-            // средняяОценкаToolStripMenuItem
+            // tableLayoutPanel1
             // 
-            this.средняяОценкаToolStripMenuItem.Name = "средняяОценкаToolStripMenuItem";
-            this.средняяОценкаToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
-            this.средняяОценкаToolStripMenuItem.Text = "Средняя оценка";
-            this.средняяОценкаToolStripMenuItem.Click += new System.EventHandler(this.средняяОценкаToolStripMenuItem_Click);
+            this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.Control;
+            this.tableLayoutPanel1.ColumnCount = 6;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.66666F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.66667F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.66667F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.66667F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.66667F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.66667F));
+            this.tableLayoutPanel1.Controls.Add(this.mainBtnBackUp, 4, 0);
+            this.tableLayoutPanel1.Controls.Add(this.mainBtnSwitch, 5, 1);
+            this.tableLayoutPanel1.Controls.Add(this.mainBtnExit, 5, 0);
+            this.tableLayoutPanel1.Controls.Add(this.mainBtnRestore, 4, 1);
+            this.tableLayoutPanel1.Controls.Add(this.mainBtnView, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.mainAdd, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.mainBtnDelete, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.mainBtnEdit, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(220, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1044, 115);
+            this.tableLayoutPanel1.TabIndex = 2;
             // 
-            // информацияПоУченикуToolStripMenuItem
+            // mainBtnBackUp
             // 
-            this.информацияПоУченикуToolStripMenuItem.Name = "информацияПоУченикуToolStripMenuItem";
-            this.информацияПоУченикуToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
-            this.информацияПоУченикуToolStripMenuItem.Text = "Информация по ученику";
+            this.mainBtnBackUp.BackColor = System.Drawing.Color.White;
+            this.mainBtnBackUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.mainBtnBackUp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mainBtnBackUp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainBtnBackUp.Enabled = false;
+            this.mainBtnBackUp.FlatAppearance.BorderSize = 0;
+            this.mainBtnBackUp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.mainBtnBackUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.mainBtnBackUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.mainBtnBackUp.Location = new System.Drawing.Point(779, 3);
+            this.mainBtnBackUp.Name = "mainBtnBackUp";
+            this.mainBtnBackUp.Size = new System.Drawing.Size(126, 51);
+            this.mainBtnBackUp.TabIndex = 49;
+            this.mainBtnBackUp.Text = "Back-up";
+            this.mainBtnBackUp.UseVisualStyleBackColor = false;
+            this.mainBtnBackUp.Visible = false;
+            // 
+            // mainBtnSwitch
+            // 
+            this.mainBtnSwitch.BackColor = System.Drawing.Color.White;
+            this.mainBtnSwitch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.mainBtnSwitch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mainBtnSwitch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainBtnSwitch.FlatAppearance.BorderSize = 0;
+            this.mainBtnSwitch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.mainBtnSwitch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.mainBtnSwitch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.mainBtnSwitch.Location = new System.Drawing.Point(911, 60);
+            this.mainBtnSwitch.Name = "mainBtnSwitch";
+            this.mainBtnSwitch.Size = new System.Drawing.Size(130, 52);
+            this.mainBtnSwitch.TabIndex = 48;
+            this.mainBtnSwitch.Text = "Сменить пользователя";
+            this.mainBtnSwitch.UseVisualStyleBackColor = false;
+            this.mainBtnSwitch.Click += new System.EventHandler(this.mainBtnSwitch_Click);
+            // 
+            // mainBtnExit
+            // 
+            this.mainBtnExit.BackColor = System.Drawing.Color.White;
+            this.mainBtnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.mainBtnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mainBtnExit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainBtnExit.FlatAppearance.BorderSize = 0;
+            this.mainBtnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.mainBtnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.mainBtnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.mainBtnExit.Location = new System.Drawing.Point(911, 3);
+            this.mainBtnExit.Name = "mainBtnExit";
+            this.mainBtnExit.Size = new System.Drawing.Size(130, 51);
+            this.mainBtnExit.TabIndex = 47;
+            this.mainBtnExit.Text = "Выход";
+            this.mainBtnExit.UseVisualStyleBackColor = false;
+            this.mainBtnExit.Click += new System.EventHandler(this.mainBtnExit_Click);
+            // 
+            // mainBtnRestore
+            // 
+            this.mainBtnRestore.BackColor = System.Drawing.Color.White;
+            this.mainBtnRestore.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.mainBtnRestore.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mainBtnRestore.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainBtnRestore.FlatAppearance.BorderSize = 0;
+            this.mainBtnRestore.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.mainBtnRestore.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.mainBtnRestore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.mainBtnRestore.Location = new System.Drawing.Point(779, 60);
+            this.mainBtnRestore.Name = "mainBtnRestore";
+            this.mainBtnRestore.Size = new System.Drawing.Size(126, 52);
+            this.mainBtnRestore.TabIndex = 46;
+            this.mainBtnRestore.Text = "Restore";
+            this.mainBtnRestore.UseVisualStyleBackColor = false;
+            // 
+            // mainBtnDelete
+            // 
+            this.mainBtnDelete.BackColor = System.Drawing.Color.White;
+            this.mainBtnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.mainBtnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mainBtnDelete.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainBtnDelete.Enabled = false;
+            this.mainBtnDelete.FlatAppearance.BorderSize = 0;
+            this.mainBtnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.mainBtnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold);
+            this.mainBtnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.mainBtnDelete.Location = new System.Drawing.Point(585, 3);
+            this.mainBtnDelete.Name = "mainBtnDelete";
+            this.tableLayoutPanel1.SetRowSpan(this.mainBtnDelete, 2);
+            this.mainBtnDelete.Size = new System.Drawing.Size(188, 109);
+            this.mainBtnDelete.TabIndex = 43;
+            this.mainBtnDelete.Text = "Удалить";
+            this.mainBtnDelete.UseVisualStyleBackColor = false;
+            this.mainBtnDelete.Visible = false;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.White;
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel3.Controls.Add(this.mainBtnUchenik, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.mainBtnGroup, 0, 5);
+            this.tableLayoutPanel3.Controls.Add(this.mainBtnUchitel, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.mainBtnJournal, 0, 4);
+            this.tableLayoutPanel3.Controls.Add(this.mainBtnPredmet, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.mainBtnSpecFac, 0, 3);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 6;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(220, 689);
+            this.tableLayoutPanel3.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Firebrick;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(222, 117);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1042, 584);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Добро пожаловать, для продолжения работы выберите одну из таблиц.";
+            // 
+            // mainBtnView
+            // 
+            this.mainBtnView.BackColor = System.Drawing.Color.White;
+            this.mainBtnView.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.mainBtnView.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mainBtnView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainBtnView.FlatAppearance.BorderSize = 0;
+            this.mainBtnView.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.mainBtnView.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold);
+            this.mainBtnView.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.mainBtnView.Location = new System.Drawing.Point(197, 3);
+            this.mainBtnView.Name = "mainBtnView";
+            this.tableLayoutPanel1.SetRowSpan(this.mainBtnView, 2);
+            this.mainBtnView.Size = new System.Drawing.Size(188, 109);
+            this.mainBtnView.TabIndex = 45;
+            this.mainBtnView.Text = "Просмотр";
+            this.mainBtnView.UseVisualStyleBackColor = false;
+            this.mainBtnView.Visible = false;
+            // 
+            // mainAdd
+            // 
+            this.mainAdd.BackColor = System.Drawing.Color.White;
+            this.mainAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.mainAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mainAdd.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainAdd.Enabled = false;
+            this.mainAdd.FlatAppearance.BorderSize = 0;
+            this.mainAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.mainAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold);
+            this.mainAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.mainAdd.Location = new System.Drawing.Point(3, 3);
+            this.mainAdd.Name = "mainAdd";
+            this.tableLayoutPanel1.SetRowSpan(this.mainAdd, 2);
+            this.mainAdd.Size = new System.Drawing.Size(188, 109);
+            this.mainAdd.TabIndex = 44;
+            this.mainAdd.Text = "Добавить";
+            this.mainAdd.UseVisualStyleBackColor = false;
+            this.mainAdd.Visible = false;
+            // 
+            // mainBtnEdit
+            // 
+            this.mainBtnEdit.BackColor = System.Drawing.Color.White;
+            this.mainBtnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.mainBtnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mainBtnEdit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainBtnEdit.Enabled = false;
+            this.mainBtnEdit.FlatAppearance.BorderSize = 0;
+            this.mainBtnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.mainBtnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold);
+            this.mainBtnEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.mainBtnEdit.Location = new System.Drawing.Point(391, 3);
+            this.mainBtnEdit.Name = "mainBtnEdit";
+            this.tableLayoutPanel1.SetRowSpan(this.mainBtnEdit, 2);
+            this.mainBtnEdit.Size = new System.Drawing.Size(188, 109);
+            this.mainBtnEdit.TabIndex = 42;
+            this.mainBtnEdit.Text = "Изменить";
+            this.mainBtnEdit.UseVisualStyleBackColor = false;
+            this.mainBtnEdit.Visible = false;
+            // 
+            // mainBtnUchenik
+            // 
+            this.mainBtnUchenik.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.mainBtnUchenik.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(116)))), ((int)(((byte)(34)))));
+            this.mainBtnUchenik.BackgroundImage = global::Colledge.Properties.Resources.mainBtnUchBrightness;
+            this.mainBtnUchenik.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.mainBtnUchenik.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mainBtnUchenik.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.mainBtnUchenik.FlatAppearance.BorderSize = 0;
+            this.mainBtnUchenik.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.mainBtnUchenik.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainBtnUchenik.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.mainBtnUchenik.Location = new System.Drawing.Point(4, 3);
+            this.mainBtnUchenik.Name = "mainBtnUchenik";
+            this.mainBtnUchenik.Size = new System.Drawing.Size(211, 108);
+            this.mainBtnUchenik.TabIndex = 41;
+            this.mainBtnUchenik.Text = "Ученик";
+            this.mainBtnUchenik.UseVisualStyleBackColor = false;
+            this.mainBtnUchenik.Click += new System.EventHandler(this.mainBtnUchenik_Click);
+            this.mainBtnUchenik.MouseEnter += new System.EventHandler(this.mainBtnUchenik_MouseEnter);
+            this.mainBtnUchenik.MouseLeave += new System.EventHandler(this.mainBtnUchenik_MouseLeave);
+            // 
+            // mainBtnGroup
+            // 
+            this.mainBtnGroup.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.mainBtnGroup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(116)))), ((int)(((byte)(34)))));
+            this.mainBtnGroup.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mainBtnGroup.BackgroundImage")));
+            this.mainBtnGroup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.mainBtnGroup.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mainBtnGroup.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.mainBtnGroup.FlatAppearance.BorderSize = 0;
+            this.mainBtnGroup.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.mainBtnGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainBtnGroup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.mainBtnGroup.Location = new System.Drawing.Point(3, 573);
+            this.mainBtnGroup.Name = "mainBtnGroup";
+            this.mainBtnGroup.Size = new System.Drawing.Size(213, 113);
+            this.mainBtnGroup.TabIndex = 45;
+            this.mainBtnGroup.Text = "Группа";
+            this.mainBtnGroup.UseVisualStyleBackColor = false;
+            // 
+            // mainBtnUchitel
+            // 
+            this.mainBtnUchitel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.mainBtnUchitel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(116)))), ((int)(((byte)(34)))));
+            this.mainBtnUchitel.BackgroundImage = global::Colledge.Properties.Resources.MainBtnUchitelBrightness;
+            this.mainBtnUchitel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.mainBtnUchitel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mainBtnUchitel.FlatAppearance.BorderSize = 0;
+            this.mainBtnUchitel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.mainBtnUchitel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainBtnUchitel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.mainBtnUchitel.Location = new System.Drawing.Point(3, 117);
+            this.mainBtnUchitel.Name = "mainBtnUchitel";
+            this.mainBtnUchitel.Size = new System.Drawing.Size(213, 108);
+            this.mainBtnUchitel.TabIndex = 42;
+            this.mainBtnUchitel.Text = "Учитель";
+            this.mainBtnUchitel.UseVisualStyleBackColor = false;
+            this.mainBtnUchitel.Click += new System.EventHandler(this.mainBtnUchitel_Click);
+            this.mainBtnUchitel.MouseEnter += new System.EventHandler(this.mainBtnUchitel_MouseEnter);
+            this.mainBtnUchitel.MouseLeave += new System.EventHandler(this.mainBtnUchitel_MouseLeave);
+            // 
+            // mainBtnJournal
+            // 
+            this.mainBtnJournal.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.mainBtnJournal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(116)))), ((int)(((byte)(34)))));
+            this.mainBtnJournal.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mainBtnJournal.BackgroundImage")));
+            this.mainBtnJournal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.mainBtnJournal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mainBtnJournal.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.mainBtnJournal.FlatAppearance.BorderSize = 0;
+            this.mainBtnJournal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.mainBtnJournal.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainBtnJournal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.mainBtnJournal.Location = new System.Drawing.Point(3, 459);
+            this.mainBtnJournal.Name = "mainBtnJournal";
+            this.mainBtnJournal.Size = new System.Drawing.Size(213, 108);
+            this.mainBtnJournal.TabIndex = 46;
+            this.mainBtnJournal.Text = "Журнал";
+            this.mainBtnJournal.UseVisualStyleBackColor = false;
+            // 
+            // mainBtnPredmet
+            // 
+            this.mainBtnPredmet.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.mainBtnPredmet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(116)))), ((int)(((byte)(34)))));
+            this.mainBtnPredmet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mainBtnPredmet.BackgroundImage")));
+            this.mainBtnPredmet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.mainBtnPredmet.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mainBtnPredmet.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.mainBtnPredmet.FlatAppearance.BorderSize = 0;
+            this.mainBtnPredmet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.mainBtnPredmet.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainBtnPredmet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.mainBtnPredmet.Location = new System.Drawing.Point(3, 231);
+            this.mainBtnPredmet.Name = "mainBtnPredmet";
+            this.mainBtnPredmet.Size = new System.Drawing.Size(213, 108);
+            this.mainBtnPredmet.TabIndex = 46;
+            this.mainBtnPredmet.Text = "Предмет";
+            this.mainBtnPredmet.UseVisualStyleBackColor = false;
+            // 
+            // mainBtnSpecFac
+            // 
+            this.mainBtnSpecFac.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.mainBtnSpecFac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(116)))), ((int)(((byte)(34)))));
+            this.mainBtnSpecFac.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mainBtnSpecFac.BackgroundImage")));
+            this.mainBtnSpecFac.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.mainBtnSpecFac.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mainBtnSpecFac.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.mainBtnSpecFac.FlatAppearance.BorderSize = 0;
+            this.mainBtnSpecFac.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.mainBtnSpecFac.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainBtnSpecFac.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.mainBtnSpecFac.Location = new System.Drawing.Point(3, 345);
+            this.mainBtnSpecFac.Name = "mainBtnSpecFac";
+            this.mainBtnSpecFac.Size = new System.Drawing.Size(213, 108);
+            this.mainBtnSpecFac.TabIndex = 44;
+            this.mainBtnSpecFac.Text = "Спец. Фак";
+            this.mainBtnSpecFac.UseVisualStyleBackColor = false;
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackgroundImage = global::Colledge.Properties.Resources.mnbjhjhj;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1264, 689);
-            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.tableLayoutPanel3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.student)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grUcenicBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jurnalBindingSource)).EndInit();
@@ -468,43 +498,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.specFacBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uchenikBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uchitelBindingSource)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripDropDownButton tsmEdit;
-        private System.Windows.Forms.ToolStripMenuItem tsmUchenik;
-        private System.Windows.Forms.ToolStripMenuItem tsmJurnal;
-        private System.Windows.Forms.ToolStripMenuItem tsmUchitel;
-        private System.Windows.Forms.ToolStripMenuItem tsmSpetialnost;
-        private System.Windows.Forms.ToolStripMenuItem tsmPredmet;
-        private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem5;
-        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem5;
-        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
-        private System.Windows.Forms.ToolStripDropDownButton tsmTool;
-        private System.Windows.Forms.ToolStripMenuItem backupToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tsmRestore;
-        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton3;
-        private System.Windows.Forms.ToolStripMenuItem aboutUsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ученикToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem журналToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem учительToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ГруппаУчениковToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tsmПредмет;
-        private System.Windows.Forms.ToolStripMenuItem спецФакToolStripMenuItem;
         private Student student;
         private System.Windows.Forms.BindingSource grUcenicBindingSource;
         private StudentTableAdapters.GrUcenicTableAdapter grUcenicTableAdapter;
@@ -519,10 +519,22 @@
         private System.Windows.Forms.BindingSource uchenikBindingSource;
         private StudentTableAdapters.UchitelTableAdapter uchitelTableAdapter;
         private System.Windows.Forms.BindingSource uchitelBindingSource;
-        private System.Windows.Forms.ToolStripMenuItem спецФакToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem средняяОценкаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem информацияПоУченикуToolStripMenuItem;
+        private System.Windows.Forms.Button mainBtnGroup;
+        private System.Windows.Forms.Button mainBtnSpecFac;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Button mainBtnEdit;
+        private System.Windows.Forms.Button mainBtnUchenik;
+        private System.Windows.Forms.Button mainBtnUchitel;
+        private System.Windows.Forms.Button mainBtnPredmet;
+        private System.Windows.Forms.Button mainBtnJournal;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Button mainBtnBackUp;
+        private System.Windows.Forms.Button mainBtnSwitch;
+        private System.Windows.Forms.Button mainBtnExit;
+        private System.Windows.Forms.Button mainBtnRestore;
+        private System.Windows.Forms.Button mainBtnView;
+        private System.Windows.Forms.Button mainAdd;
+        private System.Windows.Forms.Button mainBtnDelete;
+        private System.Windows.Forms.Label label1;
     }
 }

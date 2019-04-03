@@ -12,22 +12,24 @@ namespace Colledge
 {
     public partial class Menu : Form
     {
-        static int ponter_X = 15;
-        static int ponter_Y = 50;
+        
+        //public string builder = @"Data Source=DESKTOP-G50ABLH\SQLEXPRESS1;Initial Catalog=newind;Integrated Security=True";
+        //public SqlConnection connection = null;
+        //public static SqlCommand command = new SqlCommand();
+        public static int buttonCounter = 0;
+        public static int ponter_X = 220;
+        public static int ponter_Y = 115;
         public Menu()
         {
             InitializeComponent();
-            if (Autorization.ActiveUser < 2) tsmEdit.Visible = false;
-            if (Autorization.ActiveUser < 2) tsmRestore.Visible = false;
+
             /*Подключение к базе: */
-            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = @"DESKTOP-G50ABLH\SQLEXPRESS1";
-            builder.IntegratedSecurity = true;
-            builder.InitialCatalog = "newind";
-            SqlConnection connection = new SqlConnection(builder.ConnectionString);
+            //connection = new SqlConnection(builder);
             /**************/
         }
 
+        public int Ponter_X { get { return ponter_X; } set { ponter_X = value; } }
+        public int Ponter_Y { get { return ponter_Y; } set { ponter_Y = value; } }
 
         private void addToolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -114,20 +116,12 @@ namespace Colledge
         private void ученикToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
-            ViewUchenik v = new ViewUchenik();
-            this.Controls.Add(v);
-            v.Location = new Point(ponter_X, ponter_Y);
-            v.Visible = true;
-            ponter_X += 300;
-            if(ponter_X>400)
-            {
-                ponter_X = 0;
-                ponter_Y += 250;
-            }
+
         }
 
         private void средняяОценкаToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
             ViewUchOcenka v = new ViewUchOcenka();
             this.Controls.Add(v);
             v.Location = new Point(ponter_X, ponter_Y);
@@ -138,6 +132,87 @@ namespace Colledge
                 ponter_X = 0;
                 ponter_Y += 250;
             }
+        }
+
+        private void информацияПоУченикуToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ViewUchenik v = new ViewUchenik();
+            this.Controls.Add(v);
+            v.Location = new Point(ponter_X, ponter_Y);
+            v.Visible = true;
+            ponter_X += 300;
+            if (ponter_X > 1200)
+            {
+                ponter_X = 220;
+                ponter_Y += 250;
+            }
+        }
+
+
+
+
+        private void mainBtnUchenik_Click(object sender, EventArgs e)
+        {
+            mainBtnUchenik.BackgroundImage = new Bitmap(Properties.Resources.mainBtnUch);
+            label1.Visible = false;
+            buttonCounter = 1;
+            if (Autorization.ActiveUser > 0)
+                {
+                    mainAdd.Visible = true;
+                    mainBtnDelete.Visible = true;
+                    mainBtnEdit.Visible = true;
+                    mainBtnView.Visible = true;
+                mainBtnBackUp.Visible = true;
+                }
+        }
+
+        private void mainBtnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void mainBtnSwitch_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+
+
+        private void mainBtnUchenik_MouseEnter(object sender, EventArgs e)
+        {
+            mainBtnUchenik.BackgroundImage = new Bitmap(Properties.Resources.mainBtnUch);
+        }
+
+        private void mainBtnUchenik_MouseLeave(object sender, EventArgs e)
+        {
+            if(buttonCounter!=1)
+            mainBtnUchenik.BackgroundImage = new Bitmap(Properties.Resources.mainBtnUchBrightness);
+        }
+
+        private void mainBtnUchitel_Click(object sender, EventArgs e)
+        {
+            mainBtnUchitel.BackgroundImage = new Bitmap(Properties.Resources.MainBtnUchitel);
+            buttonCounter = 2;
+            if (Autorization.ActiveUser > 0)
+            {
+                mainAdd.Visible = true;
+                mainBtnDelete.Visible = true;
+                mainBtnEdit.Visible = true;
+                mainBtnView.Visible = true;
+                mainBtnBackUp.Visible = true;
+            }
+        }
+
+        private void mainBtnUchitel_MouseEnter(object sender, EventArgs e)
+        {
+            mainBtnUchitel.BackgroundImage = new Bitmap(Properties.Resources.MainBtnUchitel);
+        }
+
+        private void mainBtnUchitel_MouseLeave(object sender, EventArgs e)
+        {
+            if (buttonCounter != 2)
+                mainBtnUchitel.BackgroundImage = new Bitmap(Properties.Resources.MainBtnUchitelBrightness);
         }
     }
     

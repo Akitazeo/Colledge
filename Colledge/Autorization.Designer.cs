@@ -77,7 +77,6 @@
             this.tbPassword.PasswordChar = '*';
             this.tbPassword.Size = new System.Drawing.Size(98, 30);
             this.tbPassword.TabIndex = 1;
-            this.tbPassword.TextChanged += new System.EventHandler(this.tbPassword_TextChanged);
             this.tbPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbLogin_KeyDown);
             // 
             // tbLogin
@@ -87,7 +86,6 @@
             this.tbLogin.Name = "tbLogin";
             this.tbLogin.Size = new System.Drawing.Size(98, 30);
             this.tbLogin.TabIndex = 0;
-            this.tbLogin.TextChanged += new System.EventHandler(this.tbLogin_TextChanged);
             this.tbLogin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbPassword_KeyDown);
             // 
             // panel1
@@ -150,8 +148,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.BackgroundImage = global::Colledge.Properties.Resources.HI3AS9;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(390, 284);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

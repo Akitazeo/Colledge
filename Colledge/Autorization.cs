@@ -22,6 +22,10 @@ namespace Colledge
 
 
         }
+        public Autorization()
+        {
+            InitializeComponent();
+        }
 
         public static int ActiveUser=0;
         private int score=3;
@@ -73,19 +77,9 @@ namespace Colledge
             tbPassword.Focus();
         }
 
-        private void tbPassword_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbLogin_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCancel_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
 
